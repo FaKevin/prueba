@@ -1,0 +1,25 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-plain">
+                    <div class="header">
+                        <h4 class="title">Balance total</h4>
+                    </div>
+                    <div class="content table-responsive table-full-width">
+                        <ng2-smart-table [settings]="settings"[source]="source" (edit)="Edit($event)" ></ng2-smart-table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12" *ngFor="let i of resp">
+                <h1>vuelta {{i.num}}</h1>
+                <agm-map [latitude]="latt" [longitude]="lngg" [zoom]="zoom">
+                    <agm-polyline>
+                        <agm-polyline-point *ngFor="let point of i.location" [latitude]="point.lat" [longitude]="point.long">
+                        </agm-polyline-point>
+                    </agm-polyline>
+                </agm-map>
+            </div>
+        </div>
+    </div>
+  </div>

@@ -1,0 +1,45 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid"> <!-- esto es para el responsibe web de todo el navbar -->
+        <div class="navbar-header"><!-- esto es para que el navbar almenos donde aparece el nombre siempre este presente -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" (click)="sidebarToggle()"><!--aparece en movil-->
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" >{{getTitle()}}</a>
+        </div>
+        <div class="collapse navbar-collapse"><!--aparece solo collapse-->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#">
+                        <p>Account</p>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <p>
+                            Dropdown
+                            <b class="caret"></b>
+                        </p>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="http://localhost:4200/logout">
+                        <p>Log out</p>
+                    </a>
+                </li>
+                <li class="separator hidden-lg hidden-md"></li>
+            </ul>
+        </div>
+    </div>
+</nav>

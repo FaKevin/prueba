@@ -1,0 +1,69 @@
+:host {
+  font-size: 2rem;
+  //text-align:  center;
+  
+
+  /deep/ {
+    * {
+      box-sizing: border-box;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      color: inherit;
+      font: inherit;
+      margin: 0;
+      
+    }
+
+    table {
+      line-height: 0.5em;
+      border-collapse: collapse;
+      border-spacing: 0;
+      display: table;
+      width: 100%;
+      max-width: 100%;
+      overflow: auto;
+      word-break: normal;
+      word-break: keep-all;
+      
+
+      tr {
+        th {
+          font-weight: bold;
+
+        }
+        section {
+          font-size: .75em;
+          font-weight: bold;
+          
+        }
+        td,
+        th {
+          text-align:  center;
+          font-size: .875em;
+          margin-left: 100px;
+          padding-top: 0.6em;
+          padding-right: 0.5em;
+          padding-bottom: 0.5em;
+          padding-left: 0.6em;
+          
+        }
+      }
+    }
+
+    a {
+      color: #1e6bb8;
+      text-decoration: none;
+     // margin-left: 7%;
+      //padding: 0em 0em 0em 0.1em;
+      text-align:  center;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
